@@ -1,5 +1,41 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  //Write your algorithm here
+  for (let i = 0; i < array.length; i++) {
+    const complement = target - array[i];
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[j] === complement) return true;
+    }
+  }
+  return false;
+
+ 
+  
+
+  // for(let el of array){
+   
+    
+  //   if(array.indexOf(target-el) > -1){
+  //     let num = 0
+  //     target=0
+  //     return num === target
+  //   }
+
+  //   else if(array.indexOf(target-el) === -1){
+  //     let num = 0
+  //     target = 1
+  //     return num === target
+      
+  //   }
+
+  //   if(num===target){
+  //     return true
+  //   }
+  //   else if(num === 1 ){
+  //     return false
+  //   }
+    
+  // }
+  
 }
 
 /* 
